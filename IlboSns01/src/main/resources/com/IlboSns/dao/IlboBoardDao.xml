@@ -32,6 +32,10 @@
 		FROM ILBO_BOARD INNER JOIN ILBO_MEMBER ON BO_WRITER = MEM_ID
 		WHERE BO_GROUPNUM = #{boGroupNum}
 	</select>
+	
+	<select id="getBoardGroupCountByBoNum" resultType="int">
+	 SELECT COUNT(*) FROM ILBO_BOARD WHERE #{boNum} = BO_NUM
+	</select>
 
 	<select id="getBoardById" resultMap="boardView" parameterType="int">
 		select MEM_ID, MEM_PROFILE, MEM_NAME, BO_NUM, BO_CONTENT, BO_DATE, BO_FILE, BO_GROUPNUM, BO_TYPE ,BO_VISIBLITY, BO_MODDATE

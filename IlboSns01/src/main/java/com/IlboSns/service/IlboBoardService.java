@@ -45,11 +45,11 @@ public class IlboBoardService {
 	@Autowired
 	BoardModifyManager bmm;
 
-	String savePathPicture = "D:\\spring\\IlboSns01\\src\\main\\webapp\\resources\\assets\\img\\boardFile"; // 게시판 이미지
+	String savePathPicture = "C:\\Users\\user\\Desktop\\chatting\\IlboSns01\\src\\main\\webapp\\resources\\assets\\img\\boardFile"; // 게시판 이미지
 																											// 저장하는경로
-	String savePathVideo = "D:\\spring\\IlboSns01\\src\\main\\webapp\\resources\\assets\\video"; // 게시판 영상 저장하는경로
+	String savePathVideo = "C:\\Users\\user\\Desktop\\chatting\\IlboSns01\\src\\main\\webapp\\resources\\assets\\video"; // 게시판 영상 저장하는경로
 
-	String savePathGroupImg = "D:\\spring\\IlboSns01\\src\\main\\webapp\\resources\\assets\\img\\groupfile";
+	String savePathGroupImg = "C:\\Users\\user\\Desktop\\chatting\\IlboSns01\\src\\main\\webapp\\resources\\assets\\img\\groupfile";
 
 	public String getBoard(int num) {
 
